@@ -1,10 +1,13 @@
+html, body { height: 100%; }
 
 body {
-  background-color: #f2f2f2;
-    font-family: "Lato";
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #555;
+    color: white;
     padding-top: 50px;
 
     -webkit-font-smoothing: antialiased;
@@ -13,9 +16,8 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
-    font-weight: 300;
-    color: #333;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
 }
 
 
@@ -72,15 +74,19 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background-color: #34495e;
 	padding-top: 60px;
+    background-position: 50%;
+    height: 100%;
+    background-image: url(../../assets/img/main-bg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 #headerwrap h1 {
 	margin-top: 30px;
-	color: white;
 	font-size: 70px;
-	
 }
 
 #headerwrap h3 {
@@ -97,6 +103,18 @@ a:after {
 #headerwrap p {
 	text-align: left;
 	color: white
+}
+
+#headerwrap .slab {
+    background-color: rgba(221, 250, 255, 0.5);
+    padding-bottom: 1em;
+    margin: 0 auto 2em;
+    width: 80%;
+    border-radius: 5px;
+}
+
+#headerwrap .subtitle-text {
+    font-size: 30px;
 }
 
 /* intro Wrap */
@@ -150,11 +168,10 @@ a:after {
 
 #c {
 	background: #222222;
-	padding-top: 15px;
+	padding: 1.5em;
 	text-align: right;
 }
 
 #c p {
 	color: white
 }
-
