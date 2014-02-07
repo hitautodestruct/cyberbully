@@ -7,7 +7,7 @@
     <meta name="author" content="Alvarez.is - BlackTie.co">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 	
-    <title>CyberBully Charts</title>
+    <title>CyberBully - Login</title>
 
     <!-- Bootstrap core CSS -->
     
@@ -23,12 +23,9 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/changes.css" rel="stylesheet">
 
-  	<script src="https://www.google.com/jsapi"></script>
-	<script src="assets/js/charts.js"></script>
-  
   </head>
 
-  <body>
+  <body class="inner-page">
 
     <!-- Fixed navbar -->
 	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
@@ -42,56 +39,47 @@
 	          <a class="navbar-brand" href="#"><img src="assets/img/cyberbully-logo.png" alt="CyberBully"></a>
 	        </div>
 	        <div class="navbar-collapse collapse">
-	            <p class="navbar-text navbar-right"><a href="children.html" class="smothscroll">Main</a></p>
+	            <p class="navbar-text navbar-right"><a href="#home" class="smothscroll">Login</a></p>
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </div>
+	
+	    <div class="container main-wrapper">
 
-            <div class="children_page">
-                <div class="top_white">
-                    <h1>Report</h1>
-                    <h2>Safety report</h2>	
-                    <div class="line"></div>
-                </div>
-                <div class="contain_charts">
-                    <div class="child-wrapper">
-                        <div class="child">
-                			<div id="piechart" style="width: 510px; height: 225px;"></div>
-                        </div>
-                        <div class="info">
-                            <span>Danger!</span>
-                        </div>
+	    		<div class="middle-square">
+
+                    <div class="text-center title-wrapper">
+                        <h1 class="title title-arrow-box">Register</h1>
                     </div>
-                    <div class="child-wrapper">
-                        <div class="child">
-                			<div id="chart_div" style="width: 510px; height: 225px;"></div>
-                        </div>
-                        <div class="info">
-                            <span>Danger!</span>
-                        </div>
-                    </div>
-                    <div class="child-wrapper">
-                        <div class="child">
-                            <div id='chart_div_gauge' style="width: 510px; height: 225px; padding: 36px;"></div>
-                        </div>
-                        <div class="info">
-                            <span>Danger!</span>
-                        </div>
-                    </div>
-                    <div class="child-wrapper">
-                        <div class="child">
-                            <div id='donutchart' style="width: 510px; height: 225px;"></div>
-                        </div>
-                        <div class="info">
-                            <span>Danger!</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom_white">
                     
-                </div>
-            </div>
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Enter your name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter a password">
+                      </div>
+                      <div class="form-group">
+                        <label for="retype-password">Retype Password</label>
+                        <input type="password" class="form-control" id="retype-password" placeholder="Enter your password again">
+                      </div>
+                      
+                      <a href="children.html" type="submit" class="btn btn-default">Submit</a>
+                    </form>
 
+	    		</div>
+	    
+	    </div> <!--/ .container -->
 
     <div id="footer">
 		<div class="container">
