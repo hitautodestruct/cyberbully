@@ -63,12 +63,12 @@ google.setOnLoadCallback(drawChart);
       function drawChartGauge() {
         var data = google.visualization.arrayToDataTable([
           ['Label', 'Value'],
-          ['Being Bullied', 80],
+          ['Victimized', 80],
           ['Is bulling', 55]
         ]);
 
         var options = {
-          width: 400, height: 120,
+          width: 400, height: 170,
           redFrom: 90, redTo: 100,
           yellowFrom:75, yellowTo: 90,
           minorTicks: 5

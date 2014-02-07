@@ -21,7 +21,6 @@
     
         <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/changes.css" rel="stylesheet">
 
   	<script src="https://www.google.com/jsapi"></script>
 	<script src="assets/js/charts.js"></script>
@@ -42,7 +41,11 @@
 	          <a class="navbar-brand" href="#"><img src="assets/img/cyberbully-logo.png" alt="CyberBully"></a>
 	        </div>
 	        <div class="navbar-collapse collapse">
-	            <p class="navbar-text navbar-right"><a href="children.html" class="smothscroll">Main</a></p>
+	            <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-text"><a href="profile.html" class="smothscroll">Profile</a></li>
+                    <li class="navbar-text"><a href="payment.html" class="smothscroll">Payment</a></li>
+                    <li class="navbar-text"><a href="index.html" class="smothscroll">Logout</a></li>
+	            </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
 	    </div>
@@ -50,16 +53,39 @@
             <div class="children_page">
                 <div class="top_white">
                     <h1>Report</h1>
-                    <h2>Safety report</h2>	
+                    <h2>Jennifer's report</h2>	
                     <div class="line"></div>
                 </div>
                 <div class="contain_charts">
+                    
+                    <div>
+                        <div class="child-wrapper danger wide">
+                            <div class="child">
+                                <img src="assets/img/girl.png" class="pull-left" style="margin-right: 15px;">
+                                <p><span class="icon-facebook"></span> &quot;Shes such a <strong>slut DONT</strong> go to her party.&quot;</p>
+                                <p><span class="icon-twitter"></span> &quot;<strong class="size-1">BITCH</strong>! dont IM me&quot;</p>
+                                <p class="text-info"><span class="icon-twitter"></span> &quot;so sick of everybody&quot;</p>
+                                <p><span class="icon-facebook"></span> &quot;I <strong class="size-1">HATE</strong> U!!!1&quot;</p>
+                            </div>
+                            <div class="info">
+                                <strong class="name">Jane Doe</strong>
+                                <span class="text-danger">Possible Victim!</span>
+                                <br>
+                                <a href="charts.html">More Info</a>
+                                <span class="socials">
+                                    <span class="icon-facebook"></span>
+                                    <span class="icon-twitter"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="child-wrapper">
                         <div class="child">
                 			<div id="piechart" style="width: 510px; height: 225px;"></div>
                         </div>
                         <div class="info">
-                            <span>Danger!</span>
+                            <span>Dangerous behaviors detected by our analytical systems.</span>
                         </div>
                     </div>
                     <div class="child-wrapper">
@@ -67,7 +93,7 @@
                 			<div id="chart_div" style="width: 510px; height: 225px;"></div>
                         </div>
                         <div class="info">
-                            <span>Danger!</span>
+                            <span>Harrasment sources by country.</span>
                         </div>
                     </div>
                     <div class="child-wrapper">
@@ -75,7 +101,7 @@
                             <div id='chart_div_gauge' style="width: 510px; height: 225px; padding: 36px;"></div>
                         </div>
                         <div class="info">
-                            <span>Danger!</span>
+                            <span>Victimization and bullying levels.</span>
                         </div>
                     </div>
                     <div class="child-wrapper">
@@ -83,7 +109,7 @@
                             <div id='donutchart' style="width: 510px; height: 225px;"></div>
                         </div>
                         <div class="info">
-                            <span>Danger!</span>
+                            <span>Social media activities.</span>
                         </div>
                     </div>
                 </div>
@@ -113,6 +139,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
   </body>
 </html>

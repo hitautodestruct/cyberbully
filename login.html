@@ -21,8 +21,31 @@
         
         <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/changes.css" rel="stylesheet">
+    
+    <script language="javascript" src="assets/js/pronto-1.02.js"></script>
+	<script language="javascript">
+		function prontoLogin()
+		{
+			//var text = document.getElementById("TextToSend");
+			var loading = document.getElementById("loading"),
+			    sdk = new ProntoSDK("100000");
 
+            loading.classList.remove('js-hide');
+			    			    			    
+			sdk.start("",mycallback);
+
+		}
+		
+		function mycallback(data) {
+			
+			var form = document.getElementById('register-form');
+			
+			loading.classList.add('js-hide');
+			
+			form.submit();			
+			
+		}
+	</script>
   </head>
 
   <body class="inner-page">
@@ -36,7 +59,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#"><img src="assets/img/cyberbully-logo.png" alt="CyberBully"></a>
+	          <a class="navbar-brand" href="index.html"><img src="assets/img/cyberbully-logo.png" alt="CyberBully"></a>
 	        </div>
 	        <div class="navbar-collapse collapse">
 	            <p class="navbar-text navbar-right"><a href="register.html" class="smothscroll">Register</a></p>
@@ -52,7 +75,7 @@
                         <h1 class="title title-arrow-box">Login Page</h1>
                     </div>
                     
-                    <form role="form" action="children.html" method="post">
+                    <form id="register-form" role="form" action="children.html" method="post">
                       <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
@@ -62,12 +85,20 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                       </div>
                       
+                      <div class="form-group">
+                        <label class="block-title">Login With</label>
+                        <a href="#" class="connect" onclick='prontoLogin(); return false;'><img src="assets/img/login-pronto.png" alt=""></a>
+                        <a href="#" class="connect"><img src="assets/img/login-twitter.png" alt=""></a>
+                        <a href="#" class="connect"><img src="assets/img/login-facebook.png" alt="" style="margin-left: -2px;"></a>
+                        <a href="#" class="connect"><img src="assets/img/login-google.png" alt="" style="margin-left: -2px;"></a>
+                      </div>
+                      
                       <div class="checkbox">
                         <label>
                           <input type="checkbox"> Remember me
                         </label>
                       </div>
-                      <button type="submit" class="btn btn-success">Submit</button>
+                      <button class="btn btn-success"><span id="loading" class="icon-spinner js-hide"></span> Submit</button>
                     </form>
 
 	    		</div>

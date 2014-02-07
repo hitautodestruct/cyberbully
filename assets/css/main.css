@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Paragraph & Typographic */
 p {
-    line-height: 28px;
-    margin-bottom: 25px;
+    /* line-height: 28px; */
+    /* margin-bottom: 25px; */
 }
 
 .centered {
@@ -294,11 +294,16 @@ table { color: black; }
 	text-align: left;
 }
 
+.children_page .contain_charts .child-wrapper.wide { width: 82%; }
+
+.children_page .contain_charts .child-wrapper.wide .child { text-align: left; min-height: 200px; color: black;}
+
 .child-wrapper {
 	text-align: center;
 }
 
 .child-wrapper .child {
+    display: block;
 	text-align: center;
 	padding: 2em 3em;
 }
@@ -404,4 +409,9 @@ table { color: black; }
 
 .safe-note {
 	color: green;
+}
+
+.navbar-nav > li.navbar-text > a {
+    padding: 0;
+	color: white;
 }
