@@ -380,3 +380,8 @@ table { color: black; }
 	background-position: 35px 26px;
     background-repeat: no-repeat;
 }
+
+.children_page .contain_table .middle-square {
+    margin-top: 20px;
+    padding: 3em 2em;
+}

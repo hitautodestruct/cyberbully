@@ -7,7 +7,7 @@
     <meta name="author" content="Alvarez.is - BlackTie.co">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 	
-    <title>CyberBully - Login</title>
+    <title>CyberBully</title>
 
     <!-- Bootstrap core CSS -->
     
@@ -36,7 +36,7 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="#"><img src="assets/img/cyberbully-logo.png" alt="CyberBully"></a>
+	          <a class="navbar-brand" href="children.html"><img src="assets/img/cyberbully-logo.png" alt="CyberBully"></a>
 	        </div>
 	        <div class="navbar-collapse collapse">
 	            <p class="navbar-text navbar-right"><a href="#home" class="smothscroll">| Logout</a></p>
@@ -45,64 +45,49 @@
 	      </div>
 	    </div>
 
-    <div class="text-center">
-        <table class="payment-table table table-bordered" style="width: 500px">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Item</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody class="text-left">
-            <tr>
-              <td>1</td>
-              <td>CyberBully Yearly</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>CyberBully Yearly</td>
-              <td>5</td>
-            </tr>
+        <div class="children_page">
+            <div class="top_white">
+                <h1>Profile</h1>
+            </div>
+            <div class="contain_table">
+
+	    		<div class="middle-square">
+
+                    <form role="form" class="text-left">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Enter your name" value="Samantha Jennings">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter your email" value="samj@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" value="012-345-6789">
+                      </div>
+                      <div class="form-group">
+                        <label>Notifications</label>
+                          <div class="checkbox">
+                            <label><input type="checkbox" checked> Email</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox"> SMS</label>
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <a href="#">Change Password</a>                        
+                      </div>
+                      
+                      <a href="children.html" type="submit" class="btn btn-success">Submit</a>
+                    </form>
+
+	    		</div>
             
-            <tr>
-              <td>4</td>
-              <td>Trial: 1 month</td>
-              <td>0</td>
-            </tr>
-            
-            <tr>
-              <td>5</td>
-              <td>VAT</td>
-              <td>0</td>
-            </tr>
- 
-            <tr>
-              <td></td>
-              <td><strong>Total</strong></td>
-              <td><strong>10</strong></td>
-            </tr>
-            
-          </tbody>
-        </table>
-                
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_xclick-subscriptions">
-            <input type="hidden" name="business" value="elderfish@gmail.com">
-            <input type="hidden" name="lc" value="US">
-            <input type="hidden" name="item_name" value="CyberBulling">
-            <input type="hidden" name="no_note" value="1">
-            <input type="hidden" name="src" value="1">
-            <input type="hidden" name="a3" value="15.00">
-            <input type="hidden" name="p3" value="1">
-            <input type="hidden" name="t3" value="Y">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHostedGuest">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-        </form>
-    </div>
+            </div>
+        </div>
+
 
     <div id="footer">
 		<div class="container">
