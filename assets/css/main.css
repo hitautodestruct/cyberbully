@@ -194,7 +194,7 @@ a:after {
 }
 
 .middle-square {
-    width: 500px;
+    max-width: 500px;
     /* height: 50%; */
     margin: 160px auto 0;
     background-color: white;
@@ -384,4 +384,14 @@ table { color: black; }
 .children_page .contain_table .middle-square {
     margin-top: 20px;
     padding: 3em 2em;
+}
+
+.connect {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.block-title {
+    display: block;
+    margin-bottom: 15px;
 }
